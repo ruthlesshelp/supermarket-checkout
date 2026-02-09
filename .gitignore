@@ -1,0 +1,4 @@
+# The content of this file depends entirely on which files you need Git to ignore.
+
+# ignore MacOS system files
+.DS_Store
