@@ -33,12 +33,12 @@ Implementations provide two functions:
 
 ## Product Catalog
 
-| SKU | Unit Price | Discount |
-|-----|------------|----------|
-| APP | 31¢ | 3 for 81¢ |
-| BAN | 13¢ | 2 for 20¢ |
-| CORN | 47¢ | — |
-| DIP | 29¢ | — |
+| SKU | Unit Price | Discount | Description of item |
+|-----|------------|----------|---------------------|
+| APP | 31¢ | 3 for 81¢ | Apple |
+| BAN | 13¢ | 2 for 20¢ | Banana |
+| CORN | 47¢ | — | Can of corn |
+| DIP | 29¢ | — | Dipping sauce |
 
 ## Repository Files
 
