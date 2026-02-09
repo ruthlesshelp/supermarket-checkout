@@ -61,9 +61,9 @@ Quick sanity checks in a REPL or script:
 - Scanning empty string (`scan("")`) → should raise error
 
 ### Discount boundaries
-- 2 APP → 100 (no discount)
-- 3 APP → 130 (discount applied)
-- 4 APP → 180 (one discount + one regular)
+- 2 APP → 62 (no discount)
+- 3 APP → 81 (discount applied)
+- 4 APP → 112 (one discount + one regular)
 
 ### Order independence
 - APP, BAN, APP, APP → same total as APP × 3, BAN
@@ -88,7 +88,7 @@ Any enhancements must not break spec-defined behavior. All `tests.feature` tests
 ## Troubleshooting
 
 **Discount calculations are off:**
-Verify the discount logic correctly identifies complete sets. For APP (3 for 130), you need exactly 3 to get the discount. 2 APP = 100, 3 APP = 130, 4 APP = 180 (one set of 3 for 130, plus one at 50).
+Verify the discount logic correctly identifies complete sets. For APP (3 for 81), you need exactly 3 to get the discount. 2 APP = 62, 3 APP = 81, 4 APP = 112 (one set of 3 for 81, plus one at 31).
 
 **Error tests fail:**
 Ensure your implementation raises errors (not returns null/undefined) for unknown SKUs and invalid input. The error type should be idiomatic for your language (exceptions in Python/Java, panics or Results in Rust, errors in Go).
